@@ -94,11 +94,16 @@ html{scroll-behavior:smooth}
     text-indent: -9999px;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: contain;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
 }
 .mos-slick-slider .slick-prev{
-    background-image: url(images/prev.png)
+    background-image: url(images/prev.png);
+    left: 0;
 }
 .mos-slick-slider .slick-next{
-    background-image: url(images/next.png)
+    background-image: url(images/next.png);
+    right: 0;
 }
