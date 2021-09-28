@@ -54,10 +54,10 @@ html{scroll-behavior:smooth}
   top: 0;
 }
 .wave.green {
-  background: url("images/wave-green.png");
+  background-image: url("images/wave-green.png");
 }
 .wave.green:before, .wave.green:after {
-  background: url("images/wave-green.png");
+  background-image: url("images/wave-green.png");
 }
 
 @keyframes waves {
