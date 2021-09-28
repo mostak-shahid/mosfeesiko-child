@@ -17,24 +17,25 @@ html{scroll-behavior:smooth}
 
 /**/
 .wave {
-  width: 100%;
 /*  background-attachment: fixed;*/
   /*height from the svg file*/
-  height: 150px;
 /*  top: -64px;*/
   left: 0;
-  background: url("images/wave-white.png");
+  background-image: url("images/wave-white.png");
   animation: waves 20s linear infinite;
 }
 .wave:before, .wave:after {
   content: '';
   width: 100%;
-  height: 150px;
-  background: url("images/wave-white.png");
+  background-image: url("images/wave-white.png");
   position: absolute;
   top: 0;
   left: 0;
 }
+.wave,.wave:before, .wave:after {
+    height: 150px; 
+    background-size: 100% 150px;
+} 
 .wave:before {
   opacity: 0.4;
   animation: waves-reverse 20s linear infinite;
